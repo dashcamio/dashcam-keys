@@ -10,6 +10,8 @@ Watch [Dashcam Keys](https://app.dashcam.io/replay/64dbfdd41c7bd10061e69211?shar
 npm install dashcam-keys
 ```
 
+Configure dashcam to watch `/tmp/dashcam-keys.log`.
+
 ![CleanShot 2023-08-15 at 17 37 36](https://github.com/dashcamio/dashcam-keys/assets/318295/e3329a7e-b1b4-493e-920c-036a4e1a8d24)
 
 ## Output
