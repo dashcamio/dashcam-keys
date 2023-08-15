@@ -7,32 +7,34 @@ let pressed = {};
 
 console.log(`Writing to file: ${file}`);
 
-keys.addListener((e, down) => {
-  if (e.state == "DOWN") {
-    pressed[e.name] = true;
+module.exports = () => {
+  keys.addListener((e, down) => {
+    if (e.state == "DOWN") {
+      pressed[e.name] = true;
 
-    let k = `Down: ${Object.keys(pressed)
-      .filter((e) => pressed[e])
-      .join(", ")}`;
+      let k = `Down: ${Object.keys(pressed)
+        .filter((e) => pressed[e])
+        .join(", ")}`;
 
-    console.log(k);
+      console.log(k);
 
-    fs.appendFile(file, `${k}\n`, (err) => {
-      if (err) {
-        console.log(err);
-      }
-    });
-  } else {
-    pressed[e.name] = false;
-  }
-});
+      fs.appendFile(file, `${k}\n`, (err) => {
+        if (err) {
+          console.log(err);
+        }
+      });
+    } else {
+      pressed[e.name] = false;
+    }
+  });
 
-new GlobalKeyboardListener({
-  windows: {
-    onError: (errorCode) => console.error("ERROR: " + errorCode),
-    onInfo: (info) => console.info("INFO: " + info),
-  },
-  mac: {
-    onError: (errorCode) => console.error("ERROR: " + errorCode),
-  },
-});
+  new GlobalKeyboardListener({
+    windows: {
+      onError: (errorCode) => console.error("ERROR: " + errorCode),
+      onInfo: (info) => console.info("INFO: " + info),
+    },
+    mac: {
+      onError: (errorCode) => console.error("ERROR: " + errorCode),
+    },
+  });
+};
