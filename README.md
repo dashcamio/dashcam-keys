@@ -20,12 +20,34 @@ Configure dashcam to watch `/tmp/dashcam-keys.log`.
 dashcam-keys on  main [!?] is 📦 v1.0.1 via  v18.16.0 via 💎 v3.0.0
 ❯ dashcam-keys
 Writing to file: /tmp/dashcam-keys.log
-Down: F
+
+Down: L, A
+Down: K, L, A
+Down: K, S, L, A
+Down: K, S, L, A, SEMICOLON
+Down: K, D, S, L, A
+Down: D, J, S, A
+Down: F, D, J, S, A
+Down: F, D, J, L
+Down: F, K, D, J, L
+Down: K, J, L, SEMICOLON
+Down: K, J, L, A
+Down: K, J, S, L, A
+Down: D, S, A
+Down: F, D
+Down: LEFT META
+Down: SPACE, LEFT META
+Down: SPACE, LEFT META
+Down: LEFT META
+Down: SPACE, LEFT META
+Down: A
 Down: K
-Down: K, D
-Down: J
-Down: S
-Down: S, L
-Down: D
-Down: K, D
+Down: K, A
+Down: K, J, A
+Down: K, J, S, A
+Down: D, J, S, A
+Down: F, D, J
+Down: F, D, J, SPACE
+Down: LEFT CTRL
+Down: LEFT CTRL, C
 ```
